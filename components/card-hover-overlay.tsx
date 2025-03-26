@@ -15,7 +15,7 @@ interface SingleCategoryCardProps extends Omit<CardHoverOverlayProps, "categorie
 
 const CardHoverOverlay: React.FC<SingleCategoryCardProps> = ({ title, category, href = "", img = "https://placehold.co/600x400" }) => {
     return (
-        <div className="group relative overflow-hidden rounded-lg cursor-pointer">
+        <div className="group relative overflow-hidden rounded-lg cursor-pointer shadow-md">
             <div className="aspect-video bg-gray-200 w-full">
                 <Link href={href}>
                     <Image

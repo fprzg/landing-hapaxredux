@@ -12,20 +12,23 @@ import { ContactInfo, ContactFormShort } from "@/components/contact";
 
 export default function Page() {
   return (
-    <div className="min-h-screen bg-white">
-      <NavigationBar sections={[
-        { label: "Services", href: "#services" },
-        { label: "Portfolio", href: "#portfolio" },
-        { label: "About", href: "#about" },
-        { label: "Contact", href: "#contact" },
-      ]}
-      /**
-       * cta={{ label: "Get Started", href: "#contact" }}
-       */
-      />
+    <>
+      {/* Nav Section */}
+      < section >
+        <NavigationBar sections={[
+          { label: "Services", href: "#services" },
+          { label: "Portfolio", href: "#portfolio" },
+          { label: "About", href: "#about" },
+          { label: "Contact", href: "#contact" },
+        ]}
+        /**
+         * cta={{ label: "Get Started", href: "#contact" }}
+         */
+        />
+      </section >
 
       {/* Hero Section */}
-      <section className="py-20 px-6 md:px-12 lg:px-24 flex flex-col lg:flex-row items-center">
+      <section className="section flex flex-col lg:flex-row items-center" >
         <div className="lg:w-1/2 mb-12 lg:mb-0">
           <h1 className="h1 mb-6">
             Transforme su presencia digital
@@ -55,10 +58,10 @@ export default function Page() {
             <div className="absolute -top-6 -left-6 w-32 h-32 bg-green-400 rounded-full"></div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* Services Section */}
-      <section id="services" className="py-20 bg-gray-50 px-6 md:px-12 lg:px-24">
+      <section id="services" className="section bg-gray-50" >
         <div className="text-center mb-16">
           <h2 className="h2 mb-4">
             Nuestros Servicios
@@ -89,10 +92,10 @@ export default function Page() {
           ))}
         </div>
 
-      </section>
+      </section >
 
       {/* Portfolio Section */}
-      <section id="portfolio" className="py-20 px-6 md:px-12 lg:px-24">
+      < section id="portfolio" className="section" >
         <div className="text-center mb-16">
           <h2 className="h2 mb-4">
             Nuestro Portafolio
@@ -131,10 +134,10 @@ export default function Page() {
 
         </Tabs>
 
-      </section>
+      </section >
 
       {/* CTA Section */}
-      <section className="py-20 bg-blue-600 text-white px-6 md:px-12 lg:px-24">
+      < section className="section bg-blue-600 text-white" >
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="h2 mb-6">¿Listo para transformar tu negocio?</h2>
           <p className="text-xl mb-8">
@@ -153,10 +156,10 @@ export default function Page() {
             </Link>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* About Section */}
-      <section id="about" className="py-20 px-6 md:px-12 lg:px-24">
+      < section id="about" className="section" >
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="lg:w-1/2">
             <div className="hidden lg:block relative">
@@ -185,10 +188,10 @@ export default function Page() {
             */}
           </div>
         </div>
-      </section>
+      </section >
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-gray-50 px-6 md:px-12 lg:px-24">
+      < section id="contact" className="section bg-gray-50" >
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="h2 mb-4">
@@ -206,7 +209,7 @@ export default function Page() {
 
           </div>
         </div>
-      </section>
-    </div >
+      </section >
+    </>
   );
 };

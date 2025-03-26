@@ -39,18 +39,18 @@ export const services = [
     //href: "/articles/web_design",
     //},
     {
-        title: "Email y Hosting Web",
+        title: "Diseño Web y Hosting",
         //description: "Reliable and secure hosting solutions with 99.9% uptime guarantee.",
         //description: "Beautiful, responsive websites that engage your audience and drive conversions.",
         description: "Diseñamos su página web, ofrecemos hosting con garantía del 99.9% de uptime. Ofrecemos servicio de manejo de email para profesionalizar su marca.",
         icon: "🌐",
-        href: "/articles/web_hosting",
+        href: "/services/web",
     },
     {
         title: "SEO y Ads",
         description: "Le ayudamos a posicionar su negocio en buscadores usando herramientas de Google.",
         icon: "📢",
-        href: "/articles/seo",
+        href: "/services/seo",
     },
     /*
     {
@@ -65,6 +65,6 @@ export const services = [
         //description: "Native and cross-platform mobile applications for iOS and Android.",
         description: "Desarrollamos aplicaciones multiplataforma y nativas para iOS y Android.",
         icon: "📱",
-        href: "/articles/mobile_dev",
+        href: "/services/mobiledev",
     },
 ];

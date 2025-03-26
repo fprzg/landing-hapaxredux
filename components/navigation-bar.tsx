@@ -8,7 +8,7 @@ type Section = {
 }
 
 interface NavigationBarProps {
-    sections: Section[];
+    sections?: Section[];
     cta?: {
         label: string;
         href: string;
@@ -25,7 +25,7 @@ const NavigationBar: React.FC<NavigationBarProps> = ({ sections, cta }) => {
                 </div>
             </Link>
             <div className="hidden md:flex space-x-6">
-                {sections.map((section, index) => (
+                {sections?.map((section, index) => (
                     <a key={index}
                         href={section.href}
                         className="text-gray-600 hover:text-blue-600 transition-colors">

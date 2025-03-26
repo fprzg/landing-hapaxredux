@@ -3,7 +3,7 @@ import NavigationBar from "@/components/navigation-bar";
 
 const Page = () => {
     return (
-        <div className="min-h-screen bg-white">
+        <>
             <NavigationBar sections={[
                 { label: "Services", href: "#services" },
                 { label: "Portfolio", href: "#portfolio" },
@@ -29,7 +29,7 @@ const Page = () => {
                     <ContactFormDetailed />
                 </div>
             </section>
-        </div>
+        </>
     );
 };
 
