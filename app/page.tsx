@@ -6,11 +6,42 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Link from "next/link";
 import { CardHoverOverlay } from "@/components/card-hover-overlay";
-import { portfolioProjects as portfolio, services } from "@/lib/data";
 import NavigationBar from "@/components/navigation-bar";
 import { ContactInfo, ContactFormShort } from "@/components/contact";
+import { services } from "@/lib/data";
 
 export default function Page() {
+  const portfolio = [
+    {
+      title: "Uno",
+      categories: ["web"],
+      href: "/portfolio",
+      img: "/assets/simpleemoji.png"
+    },
+    {
+      title: "Dos",
+      categories: ["web", "mobile"],
+      href: "/portfolio",
+      img: "/assets/mesolog.png"
+    },
+    {
+      title: "Tres",
+      categories: ["web"],
+      href: "/portfolio",
+    },
+    {
+      title: "Cuatro",
+      categories: ["web", "mobile"],
+      href: "/portfolio",
+    },
+    {
+      title: "Cinco",
+      categories: ["web", "mobile"],
+      href: "/portfolio",
+      img: "/assets/mesolog.png"
+    },
+  ];
+
   return (
     <>
       {/* Nav Section */}
@@ -149,7 +180,7 @@ export default function Page() {
                 Agendar una consulta.
               </Button>
             </Link>
-            <Link href="">
+            <Link href="/services">
               <Button className="bg-white text-blue-600 hover:bg-gray-100 text-lg py-6 px-8">
                 Ver nuestros servicios.
               </Button>

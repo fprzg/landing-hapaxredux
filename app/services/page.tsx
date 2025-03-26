@@ -5,7 +5,6 @@ import React from "react";
 
 
 export default function Page() {
-
   const webDesignPricing = {
     included: [
       "Hero: Sección de entrada con imagen o ilustración destacada, headline y subtítulo.",
@@ -70,14 +69,18 @@ export default function Page() {
     <>
       {/* Nav Section */}
       <section>
-        <NavigationBar />
+        <NavigationBar sections={[
+          { label: "Diseño web", href: "#webdesign" },
+          { label: "Hosting web", href: "#webhosting" },
+          { label: "SEO y Ads", href: "#seoads" },
+        ]} />
       </section>
 
       {/* Web Services Section*/}
-      <section className="section">
+      <section id="webdesign" className="section">
         <div className="space-y-8">
           <div className="grid gap-4 text-center">
-            <h2 className="h2">📐Diseño Web</h2>
+            <h2 className="h2">📐 Diseño Web</h2>
             <p className="p">Desde $2,100 MXN. Incluye: </p>
           </div>
 
@@ -88,10 +91,10 @@ export default function Page() {
       </section>
 
       {/* Web Hosting Section */}
-      <section className="section">
+      <section id="webhosting" className="section">
         <div className="space-y-8">
           <div className="grid gap-4 text-center">
-            <h2 className="h2">Hosting Web</h2>
+            <h2 className="h2">🌐 Hosting Web: Garantía de 99.9% de uptime</h2>
             <p>Precio anual: $2,100 - $5,000 MXN (depende del tráfico y espacio). Incluye:</p>
           </div>
 
@@ -102,10 +105,10 @@ export default function Page() {
       </section>
 
       {/* SEO and Ads Section */}
-      <section className="section">
+      <section id="seoads" className="section">
         <div className="space-y-8">
           <div className="grid gap-4 text-center">
-            <h2 className="h2"> SEO: Asegura que te Encuentren en Google </h2>
+            <h2 className="h2"> 📢 SEO: Asegura que te Encuentren en Google </h2>
             <p>Optimización para aparecer en los primeros resultados de búsqueda y atraer clientes organicamente. Incluye:</p>
           </div>
 

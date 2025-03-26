@@ -1,36 +1,3 @@
-import { CardHoverOverlayProps } from "@/components/card-hover-overlay";
-
-export const portfolioProjects: CardHoverOverlayProps[] = [
-    {
-        title: "Uno",
-        categories: ["web"],
-        href: "/portfolio",
-        img: "/assets/simpleemoji.png"
-    },
-    {
-        title: "Dos",
-        categories: ["web", "mobile"],
-        href: "/portfolio",
-        img: "/assets/mesolog.png"
-    },
-    {
-        title: "Tres",
-        categories: ["web"],
-        href: "/portfolio",
-    },
-    {
-        title: "Cuatro",
-        categories: ["web", "mobile"],
-        href: "/portfolio",
-    },
-    {
-        title: "Cinco",
-        categories: ["web", "mobile"],
-        href: "/portfolio",
-        img: "/assets/mesolog.png"
-    },
-];
-
 export const services = [
     //{
     //title: "Web Design",

@@ -4,16 +4,7 @@ import NavigationBar from "@/components/navigation-bar";
 const Page = () => {
     return (
         <>
-            <NavigationBar sections={[
-                { label: "Services", href: "#services" },
-                { label: "Portfolio", href: "#portfolio" },
-                { label: "About", href: "#about" },
-                { label: "Contact", href: "#contact" },
-            ]}
-            /**
-             * cta={{ label: "Get Started", href: "#contact" }}
-             */
-            />
+            <NavigationBar />
 
             <section className="py-16 bg-gray-50 grid grid-cols-1 ">
                 <div className="text-center mb-12">
