@@ -15,10 +15,14 @@ const Page = () => {
              */
             />
 
-            <section className="py-20 bg-gray-50 grid grid-cols-1 ">
+            <section className="py-16 bg-gray-50 grid grid-cols-1 ">
                 <div className="text-center mb-12">
-                    <h2 className="h2"> Let's talk about your project</h2>
-                    <p className="p">Fill this form so we can help your business meets their goals.</p>
+                    <h2 className="h2 mb-4">
+                        Trabajemos juntos
+                    </h2>
+                    <p className="p">
+                        Completa este formulario para que entendamos tu negocio y agendemos una videollamada.
+                    </p>
                 </div>
 
                 <div className="w-[95%] lg:w-[75%] xl:w-[60%] mx-auto">

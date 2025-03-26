@@ -11,7 +11,7 @@ import { useState } from "react";
 const ContactInfo = () => {
     return (
         <Card>
-            <CardHeader>
+            <CardHeader className="text-center">
                 <CardTitle>Información de Contacto</CardTitle>
                 <CardDescription>
                     Contactanos a través de cualquiera de estos canales
@@ -29,10 +29,6 @@ const ContactInfo = () => {
                     <div className="bg-blue-100 p-3 rounded-full text-blue-600">📞</div>
                     <div>
                         <h4 className="font-semibold">Teléfono</h4>
-                        {/**
-                         * 
-                        <p className="text-gray-600">+1 (555) 123-4567</p>
-                         */}
                         <p className="text-gray-600">+52 (951) 244-6238</p>
                     </div>
                 </div>
@@ -69,11 +65,11 @@ const ContactFormShort = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                     <label htmlFor="name">Nombre</label>
-                    <Input id="name" placeholder="Your name" />
+                    <Input id="name" placeholder="Tu nombre" />
                 </div>
                 <div>
                     <label htmlFor="email">Email</label>
-                    <Input id="email" type="email" placeholder="Your email" />
+                    <Input id="email" type="email" placeholder="Tu email" />
                 </div>
             </div>
             <div>

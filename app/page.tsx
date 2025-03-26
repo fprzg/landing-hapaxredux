@@ -43,7 +43,7 @@ export default function Page() {
             </Link>
             <Link href="/form-detailed">
               <Button variant="outline" className="text-lg py-6 px-8">
-                Contactanos
+                Trabaja con nosotros
               </Button>
             </Link>
           </div>
