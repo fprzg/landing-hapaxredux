@@ -1,17 +1,68 @@
 "use client";
 
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import React from "react";
 import { useState } from "react";
 
+
+const ContactInfo = () => {
+    return (
+        <Card>
+            <CardHeader>
+                <CardTitle>Información de Contacto</CardTitle>
+                <CardDescription>
+                    Contactanos a través de cualquiera de estos canales
+                </CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-4">
+                <div className="flex items-start space-x-4">
+                    <div className="bg-blue-100 p-3 rounded-full text-blue-600">📍</div>
+                    <div>
+                        <h4 className="font-semibold">Dirección</h4>
+                        <p className="text-gray-600">123 Tech Street, Silicon Valley, CA 94000</p>
+                    </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                    <div className="bg-blue-100 p-3 rounded-full text-blue-600">📞</div>
+                    <div>
+                        <h4 className="font-semibold">Teléfono</h4>
+                        {/**
+                         * 
+                        <p className="text-gray-600">+1 (555) 123-4567</p>
+                         */}
+                        <p className="text-gray-600">+52 (951) 244-6238</p>
+                    </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                    <div className="bg-blue-100 p-3 rounded-full text-blue-600">✉️</div>
+                    <div>
+                        <h4 className="font-semibold">Email</h4>
+                        <p className="text-gray-600">info@hapaxredux.com</p>
+                    </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                    <div className="bg-blue-100 p-3 rounded-full text-blue-600">🕒</div>
+                    <div>
+                        <h4 className="font-semibold">Horas</h4>
+                        <p className="text-gray-600">Lunes - Viernes: 9:00 AM - 6:00 PM</p>
+                        <p className="text-gray-600">Sábado: 9:00 AM - 2:00 PM</p>
+                    </div>
+                </div>
+            </CardContent>
+        </Card>
+    );
+};
+
+
 const ContactFormShort = () => {
     return (
-        <form className="form space-y-4">
+        <form className="form space-y-4 bg-white rounded-2xl shadown-md">
             <div className="form-section">
                 <div className="form-header">
-                    <h3 className="form-h3">Mandanos un mensaje</h3>
+                    <h3 className="form-h">Mandanos un mensaje</h3>
                     <p className="form-p">Te respondemos en menos de 24 horas.</p>
                 </div>
             </div>
@@ -64,7 +115,8 @@ const ContactFormDetailed = () => {
         };
 
         console.log(data);
-    }
+    };
+
     return (
         <form className="form bg-white rounded-2xl shadow-md" onSubmit={handleSubmit}>
             <div className="form-section">
@@ -103,7 +155,7 @@ const ContactFormDetailed = () => {
                         <Input id="products" name="products" placeholder="¿Qué productos o servicios ofreces?" />
                     </div>
                     <div>
-                        <label htmlFor="clients-trade">¿A qué se dedican tus clientes?</label>
+                        <label htmlFor="clients-trade">¿Cual es el rubro de tus clientes?</label>
                         <Input id="clients-trade" name="clients-trade" type="text" placeholder="Carpintería, Transporte, etc."></Input>
                     </div>
                     <div>
@@ -127,11 +179,8 @@ const ContactFormDetailed = () => {
                     <h3 className="form-h">Agenda una cita</h3>
                     <p className="form-p">Agenda una cita gratuita para ayudarte.</p>
                 </div>
-                {/**
-                <div className="form-content space-y-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                     */}
-                <div className="form-content">
-                    <div className="flex justify-center">
+                <div className="form-content p-2 pb-6">
+                    <div className="flex justify-center mb-6">
                         <label
                             onClick={() => setWantsCall(wantsCall)}
                             className="cursor-pointer"
@@ -145,11 +194,7 @@ const ContactFormDetailed = () => {
                             </span>
                         </label>
                     </div>
-                    {/**
-                     * 
-                    <div className="justify-center bg-pink-300 space-y-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                     */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 justify-center">
+                    <div className="grid grid-cols-2 sm:grid-cols-2 gap-6 justify-center">
                         {wantsCall && (
                             <div className="grid justify-center">
                                 <label htmlFor="" className="my-auto">Fecha:</label>
@@ -176,6 +221,7 @@ const ContactFormDetailed = () => {
 };
 
 export {
+    ContactInfo,
     ContactFormShort,
     ContactFormDetailed,
 };

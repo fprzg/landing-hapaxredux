@@ -1,18 +1,21 @@
 import { SiX, SiFacebook, SiInstagram } from "@icons-pack/react-simple-icons";
+import { services } from "@/lib/data";
 
 const Footer = () => {
     return (
         <footer className="bg-gray-900 text-white py-12 px-6 md:px-12 lg:px-24">
             <div className="max-w-6xl mx-auto">
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 mb-12">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-12">
                     <div>
                         <div className="flex items-center space-x-2 mb-6">
                             <div className="w-8 h-8 bg-blue-600 rounded-md"></div>
                             <span className="text-xl font-bold">HapaxRedux</span>
                         </div>
                         <p className="text-gray-400 mb-6">
-                            Delivering innovative technology solutions since 2024.
+                            Ofreciendo soluciones tecnológicas desde 2025.
                         </p>
+                        {/**
+                         * 
                         <div className="flex space-x-4">
                             <a href="#" className="text-gray-400 hover:text-white">
                                 <span className="sr-only">Twitter</span>
@@ -33,49 +36,48 @@ const Footer = () => {
                                 </div>
                             </a>
                         </div>
+                         */}
                     </div>
 
                     <div>
-                        <h3 className="text-lg font-semibold mb-6">Services</h3>
+                        <h3 className="text-lg font-semibold mb-6">Servicios</h3>
                         <ul className="space-y-3">
-                            <li><a href="/services" className="text-gray-400 hover:text-white">Web Design</a></li>
-                            <li><a href="/services" className="text-gray-400 hover:text-white">Web Hosting</a></li>
-                            <li><a href="/services" className="text-gray-400 hover:text-white">Email Services</a></li>
-                            <li><a href="/services" className="text-gray-400 hover:text-white">Mobile Development</a></li>
+                            {services.map((item, index) => (
+                                <li key={index}><a href={item.href} className="text-gray-400 hover:text-white">{item.title}</a></li>
+                            ))}
                         </ul>
                     </div>
 
-                    {
-                        /**
-                         * 
-                                        <div>
-                                            <h3 className="text-lg font-semibold mb-6">Company</h3>
-                                            <ul className="space-y-3">
-                                                <li><a href="#" className="text-gray-400 hover:text-white">About Us</a></li>
-                                                <li><a href="#" className="text-gray-400 hover:text-white">Team</a></li>
-                                                <li><a href="#" className="text-gray-400 hover:text-white">Careers</a></li>
-                                                <li><a href="#" className="text-gray-400 hover:text-white">Blog</a></li>
-                                                <li><a href="#" className="text-gray-400 hover:text-white">Press</a></li>
-                                            </ul>
-                                        </div>
-                    
-                         */
-                    }
                     <div>
-                        <h3 className="text-lg font-semibold mb-6">Support</h3>
+                        <h3 className="text-lg font-semibold mb-6">Compañía</h3>
                         <ul className="space-y-3">
-                            <li><a href="#" className="text-gray-400 hover:text-white">Help Center</a></li>
-                            <li><a href="#" className="text-gray-400 hover:text-white">Contact Us</a></li>
-                            <li><a href="#" className="text-gray-400 hover:text-white">Privacy Policy</a></li>
-                            <li><a href="#" className="text-gray-400 hover:text-white">Terms of Service</a></li>
-                            <li><a href="#" className="text-gray-400 hover:text-white">FAQ</a></li>
+                            <li><a href="#" className="text-gray-400 hover:text-white">Sobre nosotros</a></li>
+                            <li><a href="#" className="text-gray-400 hover:text-white">Equipo</a></li>
+                            {/**
+                             * 
+                            <li><a href="#" className="text-gray-400 hover:text-white">Careers</a></li>
+                             */}
+                            <li><a href="#" className="text-gray-400 hover:text-white">Blog</a></li>
+                            {/**
+                            <li><a href="#" className="text-gray-400 hover:text-white">Press</a></li>
+                                 */}
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 className="text-lg font-semibold mb-6">Soporte</h3>
+                        <ul className="space-y-3">
+                            <li><a href="#" className="text-gray-400 hover:text-white">Contactanos</a></li>
+                            <li><a href="#" className="text-gray-400 hover:text-white">Política de Privacidad</a></li>
+                            <li><a href="#" className="text-gray-400 hover:text-white">Términos de Servicio</a></li>
+                            <li><a href="#" className="text-gray-400 hover:text-white">Preguntas Frecuentes</a></li>
                         </ul>
                     </div>
                 </div>
 
                 <div className="pt-8 border-t border-gray-800 text-center md:flex md:justify-between md:text-left">
                     <p className="text-gray-400">
-                        &copy; {new Date().getFullYear()} HapaxRedux. All rights reserved.
+                        &copy; {new Date().getFullYear()} HapaxRedux. Derechos reservados.
                     </p>
                     {/**
                      * 

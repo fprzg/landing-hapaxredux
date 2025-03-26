@@ -9,7 +9,6 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { CardHoverOverlay } from "@/components/card-hover-overlay";
-import { portfolioProjects as portfolio, services } from "@/utils/asd";
 import NavigationBar from "@/components/navigation-bar";
 
 export default function Page() {

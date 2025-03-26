@@ -1,4 +1,4 @@
-import { ContactFormDetailed } from "@/components/contact-forms";
+import { ContactFormDetailed } from "@/components/contact";
 import NavigationBar from "@/components/navigation-bar";
 
 const Page = () => {
@@ -15,7 +15,7 @@ const Page = () => {
              */
             />
 
-            <section className="py-20 bg-gray-50 grid grid-cols-1">
+            <section className="py-20 bg-gray-50 grid grid-cols-1 ">
                 <div className="text-center mb-12">
                     <h2 className="h2"> Let's talk about your project</h2>
                     <p className="p">Fill this form so we can help your business meets their goals.</p>
