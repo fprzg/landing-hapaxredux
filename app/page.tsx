@@ -48,10 +48,10 @@ export default function Page() {
       {/* Nav Section */}
       < section >
         <NavigationBar sections={[
-          { label: "Services", href: "#services" },
-          { label: "Portfolio", href: "#portfolio" },
-          { label: "About", href: "#about" },
-          { label: "Contact", href: "#contact" },
+          { label: "Servicios", href: "#services" },
+          { label: "Portafolio", href: "#portfolio" },
+          { label: "Sobre Nosotros", href: "#about" },
+          { label: "Contacto", href: "#contact" },
         ]}
         /**
          * cta={{ label: "Get Started", href: "#contact" }}
@@ -86,8 +86,10 @@ export default function Page() {
         <div className="lg:w-1/2">
           <div className="hidden lg:inline relative">
             <div className="w-full h-96 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg shadow-xl"></div>
+            {/**
             <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-yellow-400 rounded-lg"></div>
             <div className="absolute -top-6 -left-6 w-32 h-32 bg-green-400 rounded-full"></div>
+             */}
           </div>
         </div>
       </section >
@@ -123,6 +125,7 @@ export default function Page() {
       </section >
 
       {/* Portfolio Section */}
+      {/**
       < section id="portfolio" className="section" >
         <div className="text-center mb-16">
           <h2 className="h2 mb-4">
@@ -159,10 +162,9 @@ export default function Page() {
               <CardHoverOverlay key={index} {...item} category="iOS and Andoid" />
             ))}
           </TabsContent>
-
         </Tabs>
-
       </section >
+       */}
 
       {/* CTA Section */}
       < section className="section bg-blue-600 text-white" >
@@ -192,8 +194,10 @@ export default function Page() {
           <div className="lg:w-1/2">
             <div className="hidden lg:block relative">
               <div className="w-full h-96 bg-gray-200 rounded-lg"></div>
+              {/**
               <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-blue-600 rounded-lg"></div>
               <div className="absolute -top-6 -left-6 w-32 h-32 bg-yellow-400 rounded-full"></div>
+               */}
             </div>
           </div>
           <div className="lg:w-1/2">
@@ -232,9 +236,7 @@ export default function Page() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <ContactInfo />
-
             <ContactFormShort />
-
           </div>
         </div>
       </section >
