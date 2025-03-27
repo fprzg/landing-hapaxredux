@@ -17,14 +17,16 @@ export default function Page() {
       "Traducción inglés/español incluída.",
     ],
     table: [
-      { service: "Testimonios", price: "$350 MXN" },
-      { service: "Blog / Noticias", price: "$700 MXN" },
-      { service: "Precios / Cotizador simple", price: "$600 MXN" },
-      { service: "Mapa interactivo", price: "$400 MXN" },
-      { service: "Timeline / Historia", price: "$350 MXN" },
-      { service: "Sistema de citas / reservas online con sincronización Google Calendar", price: "$1,800 MXN" },
-      { service: "Landing page para compañas (incluye SEO y un formulario específico)", price: "$1,200 MXN / landing" },
-      { service: "Asesoría de marca y tono (Branding express. Entrega en PDF con voz, tono y personalidad recomendada).", price: "$1,000 MXN" }
+      { service: "Copywriting", price: "$100 / sección", },
+      { service: "Formularios extra (a partir del 4° formulario)", price: "$100 / formulario adicional" },
+      { service: "Testimonios", price: "$100 MXN" },
+      { service: "Precios / Cotizador simple", price: "$250 MXN" },
+      { service: "Telemetría avanzada (eventos personalizados, heatmaps)", price: "$250 configuración inicial + $100 / mes" },
+      { service: "Sistema de citas / reservas online con sincronización Google Calendar", price: "$400 MXN" },
+      { service: "Traducción adicional (5 idiomas)", price: "$400 MXN / web" },
+      { service: "Landing page para compañas (incluye SEO y un formulario específico)", price: "$700 MXN / landing" },
+      { service: "Integración de pasarela de pago (Stripe, MercadoPago)", price: "$700 MXN / integración" },
+      { service: "Sesión fotográfica profesional (local, hasta 25 fotos editadas)", price: "$800 (única vez)" },
     ],
   };
 
@@ -36,24 +38,15 @@ export default function Page() {
       "Copias de seguridad mensuales.",
     ],
     table: [
-      { service: "Mail marketing (hasta 2,000 contactos)", price: "$800 MXN / mes", },
-      { service: "Mantenimiento web", price: "$700 MXN / mes (actualización de contenidos y seguridad)", },
-      { service: "Copywriting", price: "$150 / sección", },
-      { service: "Diseño de Ads (Facebook/Instagram/Google)", price: "$250 MXN / ad", },
-      { service: "SEO Avanzado (auditoría + accioens)", price: "$1,200 MXN / mes", },
-      { service: "Telemetría avanzada (eventos personalizados, heatmaps)", price: "$700 / mes" },
-      { service: "Sesión fotográfica profesional (local, hasta 25 fotos editadas)", price: "$2,500 (única vez)" },
-      { service: "Bots Whatsapp + Telegram", price: "$1,200 MXN / configuración inicial + $200 MXN / mes" },
-      { service: "Acceso CMS (editor visual, sin código)", price: "$1,500 / año" },
-      { service: "Formularios extra (a partir del 4° formulario)", price: "$150 / formulario adicional" },
-      { service: "Traducción adicional (5 idiomas)", price: "$1,500 MXN / web" },
-      { service: "Integración de pasarela de pago (Stripe, MercadoPago)", price: "$1,200 MXN / integración" },
+      //{ service: "SEO Avanzado (auditoría + acciones)", price: "$1,200 MXN / mes", },
+      //{ service: "Bots Whatsapp + Telegram", price: "$800 MXN / configuración inicial + $200 MXN / mes" },
+      { service: "Mantenimiento web", price: "$300 MXN / mes (actualización de contenidos y seguridad)", },
+      { service: "Acceso CMS (editor visual, sin código)", price: "$500 / año" },
     ],
   };
 
 
   const seoPricing = {
-    table: [],
     included: [
       "Auditoría SEO inicial (análisis de tu sitio web y competidores).",
       "Optimización on-page (títulos, metadescripciones, imágenes, estructura).",
@@ -62,6 +55,11 @@ export default function Page() {
       "Indexación en Google Search Console.",
       "Configuración y optimización de Google My Business (si aplica).",
       "Informe mensual con resultados y recomendaciones.",
+    ],
+    table: [
+      { service: "Diseño de Ads (Facebook/Instagram/Google)", price: "$250 MXN / ad", },
+      { service: "Mail marketing (hasta 2,000 contactos)", price: "$300 MXN / mes", },
+      { service: "Branding express. Asesoría de marca y tono (Entrega en PDF con voz, tono y personalidad recomendada).", price: "$1,000 MXN" },
     ],
   };
 
@@ -80,7 +78,7 @@ export default function Page() {
       <section id="webdesign" className="section">
         <div className="space-y-8">
           <div className="grid gap-4 text-center">
-            <h2 className="h2">📐 Diseño Web</h2>
+            <h2 className="h2">📐 Diseño Web: Aumente su presencia en línea</h2>
             <p className="p">Desde $2,100 MXN. Incluye: </p>
           </div>
 
@@ -109,10 +107,11 @@ export default function Page() {
         <div className="space-y-8">
           <div className="grid gap-4 text-center">
             <h2 className="h2"> 📢 SEO: Asegura que te Encuentren en Google </h2>
-            <p>Optimización para aparecer en los primeros resultados de búsqueda y atraer clientes organicamente. Incluye:</p>
+            <p>Optimización para aparecer en los primeros resultados de búsqueda y atraer clientes organicamente. Apartir de $1,200 / mes. Incluye:</p>
           </div>
 
           <BulletList items={seoPricing.included} />
+          <PricingTable services={seoPricing.table} />
 
         </div>
 

@@ -9,6 +9,7 @@ import { CardHoverOverlay } from "@/components/card-hover-overlay";
 import NavigationBar from "@/components/navigation-bar";
 import { ContactInfo, ContactFormShort } from "@/components/contact";
 import { services } from "@/lib/data";
+import RedirectButton from "@/components/redirect-button";
 
 export default function Page() {
   const portfolio = [
@@ -113,11 +114,7 @@ export default function Page() {
                 <p className="text-gray-600">{service.description}</p>
               </CardContent>
               <CardFooter>
-                <Link href={service.href}>
-                  <Button variant="ghost" className="text-blue-600 hover:text-blue-800 p-0">
-                    Mostrar más →
-                  </Button>
-                </Link>
+                <RedirectButton text="Mostrar más" href={service.href} />
               </CardFooter>
             </Card>
           ))}
