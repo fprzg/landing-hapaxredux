@@ -126,6 +126,14 @@
   }
 }
 
+.vertically-centered {
+  @apply flex flex-col items-center;
+}
+
+.horizontally-centered {
+  @apply flex flex-row justify-center;
+}
+
 .section {
   @apply py-20 px-6 md:px-12 lg:px-24;
 }

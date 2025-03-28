@@ -2,6 +2,7 @@ import NavigationBar from "@/components/navigation-bar";
 import PricingTable from "@/components/pricing-table";
 import BulletList from "@/components/bullet-list";
 import { webDesignPricing } from "@/lib/data";
+import { Img } from "@/components/img";
 
 const Page = () => {
     return (
@@ -20,6 +21,20 @@ const Page = () => {
                     <PricingTable services={webDesignPricing.table} />
                 </div>
             </section>
+
+            {/* Results Section */}
+            <Img
+                alt="Google Page"
+                src="/imgs/pagespeedinsights-01.png"
+                width={800}
+            />
+
+            <Img
+                alt="Google Page"
+                src="/imgs/pagespeedinsights-02.png"
+                width={800}
+            />
+
         </>
     );
 };
