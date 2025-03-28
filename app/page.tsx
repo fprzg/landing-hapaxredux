@@ -116,7 +116,7 @@ export default function Page() {
                 <p className="text-gray-600">{service.description}</p>
               </CardContent>
               <CardFooter>
-                <RedirectButton text="Mostrar más" href={service.href} />
+                <RedirectButton href={service.href} >Mostrar más</RedirectButton>
               </CardFooter>
             </Card>
           ))}

@@ -146,6 +146,10 @@
   @apply text-xl;
 }
 
+.a {
+  @apply font-mono font-semibold text-gray-600;
+}
+
 .form {
   @apply p-4;
 }
