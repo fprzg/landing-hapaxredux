@@ -46,7 +46,7 @@ export const services = [
 export const webDesignPricing = {
     included: [
         "Hero: Sección de entrada con imagen o ilustración destacada, headline y subtítulo.",
-        "CTA (Call to Action): llamado claro a acción (botón de contacto, cotización, jetc.).",
+        "CTA (Call to Action): llamado claro a acción (botón de contacto, cotización, etc.).",
         "Portfolio / Galería.",
         "Sección de servicios detallados.",
         "FAQ (Frequenct Asked Questions): Preguntas frecuentes.",

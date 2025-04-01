@@ -10,6 +10,8 @@ import NavigationBar from "@/components/navigation-bar";
 import { ContactInfo, ContactFormShort } from "@/components/contact";
 import { services } from "@/lib/data";
 import RedirectButton from "@/components/redirect-button";
+import BulletList from "@/components/bullet-list";
+import { CheckCircle2 } from 'lucide-react';
 
 export default function Page() {
   const portfolio = [
@@ -66,7 +68,13 @@ export default function Page() {
             Transforme su presencia digital
           </h1>
           <p className="p text-gray-600 mb-8">
+            Somos una agencia especializada en desarrollo web, hosting administrado y estrategias de posicionamiento digital.
+          </p>
+          {/**
             Ofrecemos soluciones tecnologicas de vanguardia que impulsan el crecimiento y la innovación de las empresas.
+             */}
+          <p className="p text-gray-600 mb-8">
+            Creamos nuestros sistemas optimizando cada detalle para garantizar velocidad, estabilidad y visibilidad.
           </p>
           <div className="flex flex-row gap-4">
             <Link href={"/services"} className="">
@@ -98,28 +106,161 @@ export default function Page() {
             Soluciones tecnológicas integrales adaptadas a las necesidades de tu negocio
           </p>
         </div>
-
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {services.map((service, index) => (
-            <Card key={index} className="bg-white hover:shadow-lg transition-shadow">
-              <CardHeader className="flex flex-row gap-8">
-                <div className="text-4xl mb-4">{service.icon}</div>
-                <CardTitle className="text-2xl">{service.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">{service.description}</p>
-              </CardContent>
-              <CardFooter>
-                <RedirectButton href={service.href} >Mostrar más</RedirectButton>
-              </CardFooter>
-            </Card>
-          ))}
-        </div>
+          <Card className="bg-white hover:shadow-lg transition-shadow">
+            <CardHeader className="flex flex-row gap-8">
+              <div className="text-4xl mb-4">💻</div>
+              <CardTitle className="text-2xl">Diseño Web</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="max-w-md p-2 flex flex-col gap-4 text-gray-800">
+                <p className="text-justify">
+                  Un sitio web lento impacta negativamente la
+                  <span className="font-bold"> experiencia de usuario, la conversión y posicionamiento </span>
+                  en buscadores.
+                </p>
+                <p className="text-justify">
+                  Optimizamos nuestros productos para garantizar
+                  <span className="font-bold"> tiempos de carga mínimos </span>
+                  y ayudamos a su negocio a destacar frente a la competencia con un
+                  <span className="font-bold"> diseño atractivo, intuitivo y adaptado </span>
+                  a todos los dispositivos.
+                </p>
+                <ul className="space-y-4">
+                  <li className="flex items-center space-x-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0" />
+                    <span className="font-medium">
+                      Puntuación 97+ garantizada en
+                      <span className="font-bold"> PageSpeed Insights</span>
+                      .
+                    </span>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0" />
+                    <span className="font-medium">
+                      Interfaces modernas, responsivas y accesibles.
+                    </span>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0" />
+                    <span className="font-medium">
+                      Desarrollo a medida según las necesidades del ciente.
+                    </span>
+                  </li>
+                </ul>
+              </div>
 
-      </section >
+            </CardContent>
+            <CardFooter>
+              <RedirectButton href={""} >Mostrar más</RedirectButton>
+            </CardFooter>
+          </Card>
+
+          <Card className="bg-white hover:shadow-lg transition-shadow">
+            <CardHeader className="flex flex-row gap-8">
+              <div className="text-4xl mb-4">🌐</div>
+              <CardTitle className="text-2xl">Hosting Administrado</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="max-w-md p-2 flex flex-col gap-4 text-gray-800">
+                <p className="text-justify">
+                  Olvídese de las preocupacioens técnicas; nuestro hosting administrado garanzita estabilidad y seguridad con un
+                  <span className="font-bold"> 99.9% de uptime</span>
+                  , backups automáticos, certificado ssl y protección avanzada con
+                  <span className="font-bold"> Cloudflare CDN Cache</span>
+                  .
+                </p>
+                <ul className="space-y-4">
+                  <li className="flex items-center space-x-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0" />
+                    <span className="font-medium">
+                      Garantizamos
+                      <span className="font-bold"> 99.9% de uptime </span>
+                      para máxima estabilidad.
+                    </span>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0" />
+                    <span className="font-medium">
+                      Integración con
+                      <span className="font-bold"> Cloudflare CDN Cache </span>
+                      para tiempos de carga mínimos.
+                    </span>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0" />
+                    <span className="font-medium">
+                      Actualizaciones continuas de
+                      <span className="font-bold"> seguridad y contenido</span>
+                      .
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </CardContent>
+            <CardFooter>
+              <RedirectButton href={""} className="" >Mostrar más</RedirectButton>
+            </CardFooter>
+          </Card>
+
+          <Card className="bg-white hover:shadow-lg transition-shadow">
+            <CardHeader className="flex flex-row gap-8">
+              <div className="text-4xl mb-4">📢</div>
+              <CardTitle className="text-2xl">SEO y Ads</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="max-w-md p-2 flex flex-col gap-4 text-gray-800">
+                <p className="text-justify">
+                  Aparecer en los primeros resultados de búsqueda es clave para atraer clientes. Con nuestra auditoría SEO inicial, detectamos
+                  <span className="font-bold"> oportunidades de mejora </span>
+                  y<span className="font-bold"> optimizamos </span>
+                  su sitio para que los motores de búsqueda lo indexen mejor.
+                </p>
+                <p className="text-justify tracking-tight">
+                  Gestionamos su presencia en
+                  <span className="font-bold"> Google Search Console </span>
+                  y
+                  <span className="font-bold"> Google My Business</span>
+                  , asegurando que su negocio sea visible en búsquedas locales y que sus anuncios lleguen a la audiencia correcta.
+                </p>
+                <ul className="space-y-4">
+                  <li className="flex items-center space-x-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0" />
+                    <span className="font-medium">
+                      <span className="font-bold">Auditoria initial </span>
+                      para identificar áreas de mejora.
+                    </span>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0" />
+                    <span className="font-medium">
+                      <span className="font-bold">Optimización op-page </span>
+                      para mejorar el posicionamiento en buscadores.
+                    </span>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0" />
+                    <span className="font-medium">
+                      Configuración y gestión de
+                      <span className="font-bold"> Google Search Console </span>
+                      y
+                      <span className="font-bold"> Google My Business</span>
+                      .
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+            </CardContent>
+            <CardFooter>
+              <RedirectButton href="" >Mostrar más</RedirectButton>
+            </CardFooter>
+          </Card>
+        </div>
+      </section>
 
       {/* Portfolio Section */}
-      {/**
+      {/*
       < section id="portfolio" className="section" >
         <div className="text-center mb-16">
           <h2 className="h2 mb-4">
@@ -171,11 +312,6 @@ export default function Page() {
             <Link href="/form-detailed">
               <Button className="bg-white text-blue-600 hover:bg-gray-100 text-lg py-6 px-8">
                 Agendar una consulta.
-              </Button>
-            </Link>
-            <Link href="/services">
-              <Button className="bg-white text-blue-600 hover:bg-gray-100 text-lg py-6 px-8">
-                Ver nuestros servicios.
               </Button>
             </Link>
           </div>
