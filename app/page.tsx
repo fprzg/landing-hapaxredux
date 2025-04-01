@@ -68,18 +68,12 @@ export default function Page() {
           <p className="p text-gray-600 mb-8">
             Ofrecemos soluciones tecnologicas de vanguardia que impulsan el crecimiento y la innovación de las empresas.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Link href={"/services"}>
-              <Button
-                className="bg-blue-600 hover:bg-blue-700 text-lg py-6 px-8"
-              >
-                Nuestros servicios
-              </Button>
+          <div className="flex flex-row gap-4">
+            <Link href={"/services"} className="">
+              <Button className="text-lg py-6 px-8 bg-blue-600 hover:bg-blue-700">Nuestros servicios</Button>
             </Link>
-            <Link href="/form-detailed">
-              <Button variant="outline" className="text-lg py-6 px-8">
-                Trabaja con nosotros
-              </Button>
+            <Link href="/form-detailed" className="">
+              <Button variant="outline" className="text-lg py-6 px-8">Trabaja con nosotros</Button>
             </Link>
           </div>
         </div>
