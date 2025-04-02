@@ -58,7 +58,7 @@ const ContactInfo = () => {
 
 const ContactFormShort = () => {
     return (
-        <form className="form space-y-4 bg-white rounded-2xl shadown-md">
+        <form className="form space-y-4 bg-white rounded-2xl shadow-md">
             <div className="form-section">
                 <div className="form-header">
                     <h3 className="form-h">Mandanos un mensaje</h3>

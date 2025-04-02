@@ -8,9 +8,7 @@ import Link from "next/link";
 import { CardHoverOverlay } from "@/components/card-hover-overlay";
 import NavigationBar from "@/components/navigation-bar";
 import { ContactInfo, ContactFormShort } from "@/components/contact";
-import { services } from "@/lib/data";
 import RedirectButton from "@/components/redirect-button";
-import BulletList from "@/components/bullet-list";
 import { CheckCircle2 } from 'lucide-react';
 
 export default function Page() {
@@ -51,12 +49,12 @@ export default function Page() {
       < section >
         <NavigationBar sections={[
           { label: "Servicios", href: "#services" },
-          { label: "Portafolio", href: "#portfolio" },
+          //{ label: "Portafolio", href: "#portfolio" },
           { label: "Sobre Nosotros", href: "#about" },
           { label: "Contacto", href: "#contact" },
         ]}
         /**
-         * cta={{ label: "Get Started", href: "#contact" }}
+         cta={{ label: "Get Started", href: "#contact" }}
          */
         />
       </section >
@@ -233,7 +231,7 @@ export default function Page() {
                   <li className="flex items-center space-x-3">
                     <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0" />
                     <span className="font-medium">
-                      <span className="font-bold">Optimización op-page </span>
+                      <span className="font-bold">Optimización on-page </span>
                       para mejorar el posicionamiento en buscadores.
                     </span>
                   </li>
