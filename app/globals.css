@@ -126,11 +126,11 @@
   }
 }
 
-.vertically-centered {
+div .div-center-vertical {
   @apply flex flex-col items-center;
 }
 
-.horizontally-centered {
+div .div-center-horizontal {
   @apply flex flex-row justify-center;
 }
 
@@ -151,11 +151,15 @@
 }
 
 .p {
-  @apply text-xl;
+  @apply text-lg md:text-xl;
 }
 
 .a {
   @apply font-mono font-semibold text-gray-600;
+}
+
+.button {
+  @apply text-base py-5 px-6 md:text-lg md:py-6 md:px-8;
 }
 
 .form {

@@ -29,21 +29,21 @@ const ContactInfo = () => {
                 </div>
                  */}
                 <div className="flex items-start space-x-4">
-                    <div className="bg-blue-100 p-3 rounded-full text-blue-600">📞</div>
+                    <div className="bg-blue-100 p-1 md:p-3 rounded-full text-blue-600">📞</div>
                     <div>
                         <h4 className="font-semibold">Teléfono</h4>
                         <p className="text-gray-600">+52 (951) 244-6238</p>
                     </div>
                 </div>
                 <div className="flex items-start space-x-4">
-                    <div className="bg-blue-100 p-3 rounded-full text-blue-600">✉️</div>
+                    <div className="bg-blue-100 p-1 md:p-3 rounded-full text-blue-600">✉️</div>
                     <div>
                         <h4 className="font-semibold">Email</h4>
                         <p className="text-gray-600">contacto@hapaxredux.com</p>
                     </div>
                 </div>
                 <div className="flex items-start space-x-4">
-                    <div className="bg-blue-100 p-3 rounded-full text-blue-600">🕒</div>
+                    <div className="bg-blue-100 p-1 md:p-3 rounded-full text-blue-600">🕒</div>
                     <div>
                         <h4 className="font-semibold">Horas</h4>
                         <p className="text-gray-600">Lunes - Viernes: 9:00 AM - 6:00 PM</p>

@@ -62,27 +62,26 @@ export default function Page() {
       </section >
 
       {/* Hero Section */}
-      <section className="section flex flex-col lg:flex-row items-center" >
-        <div className="lg:w-1/2 mb-12 lg:mb-0">
+      <section className="section flex flex-col gap-8 lg:flex-row items-center" >
+        <div className="lg:w-1/2">
           <h1 className="h1 mb-6">
             Transforme su presencia digital
           </h1>
           <p className="p text-gray-600 mb-8">
             Somos una agencia especializada en desarrollo web, hosting administrado y estrategias de posicionamiento digital.
           </p>
-          {/**
-            Ofrecemos soluciones tecnologicas de vanguardia que impulsan el crecimiento y la innovación de las empresas.
-             */}
           <p className="p text-gray-600 mb-8">
             Creamos nuestros sistemas optimizando cada detalle para garantizar velocidad, estabilidad y visibilidad.
           </p>
-          <div className="flex flex-row gap-4">
+          <div className="flex flex-col md:flex-row gap-4">
             <Link href={"/services"} className="">
-              <Button className="text-lg py-6 px-8 bg-blue-600 hover:bg-blue-700">Nuestros servicios</Button>
+              <Button className="button bg-blue-600 hover:bg-blue-700">Nuestros servicios</Button>
             </Link>
+            {/**
             <Link href="/form-detailed" className="">
-              <Button variant="outline" className="text-lg py-6 px-8">Trabaja con nosotros</Button>
+              <Button variant="outline" className="button">Trabaja con nosotros</Button>
             </Link>
+             */}
           </div>
         </div>
         <div className="lg:w-1/2">
@@ -106,14 +105,14 @@ export default function Page() {
             Soluciones tecnológicas integrales adaptadas a las necesidades de tu negocio
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mb-16">
           <Card className="bg-white hover:shadow-lg transition-shadow">
-            <CardHeader className="flex flex-row gap-8">
-              <div className="text-4xl mb-4">💻</div>
+            <CardHeader className="flex flex-row items-center gap-4 md:gap-8 my-4">
+              <div className="text-4xl">💻</div>
               <CardTitle className="text-2xl">Diseño Web</CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="max-w-md p-2 flex flex-col gap-4 text-gray-800">
+              <div className="p-2 flex flex-col gap-4 text-gray-800">
                 <p className="text-justify">
                   Un sitio web lento impacta negativamente la
                   <span className="font-bold"> experiencia de usuario, la conversión y posicionamiento </span>
@@ -157,12 +156,12 @@ export default function Page() {
           </Card>
 
           <Card className="bg-white hover:shadow-lg transition-shadow">
-            <CardHeader className="flex flex-row gap-8">
-              <div className="text-4xl mb-4">🌐</div>
+            <CardHeader className="flex flex-row items-center gap-4 md:gap-8 my-4">
+              <div className="text-4xl">🌐</div>
               <CardTitle className="text-2xl">Hosting Administrado</CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="max-w-md p-2 flex flex-col gap-4 text-gray-800">
+              <div className="p-2 flex flex-col gap-4 text-gray-800">
                 <p className="text-justify">
                   Olvídese de las preocupacioens técnicas; nuestro hosting administrado garanzita estabilidad y seguridad con un
                   <span className="font-bold"> 99.9% de uptime</span>
@@ -204,12 +203,12 @@ export default function Page() {
           </Card>
 
           <Card className="bg-white hover:shadow-lg transition-shadow">
-            <CardHeader className="flex flex-row gap-8">
-              <div className="text-4xl mb-4">📢</div>
+            <CardHeader className="flex flex-row items-center gap-4 md:gap-8 my-4">
+              <div className="text-4xl">📢</div>
               <CardTitle className="text-2xl">SEO y Ads</CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="max-w-md p-2 flex flex-col gap-4 text-gray-800">
+              <div className="p-2 flex flex-col gap-4 text-gray-800">
                 <p className="text-justify">
                   Aparecer en los primeros resultados de búsqueda es clave para atraer clientes. Con nuestra auditoría SEO inicial, detectamos
                   <span className="font-bold"> oportunidades de mejora </span>
@@ -306,7 +305,7 @@ export default function Page() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="h2 mb-6">¿Listo para transformar tu negocio?</h2>
           <p className="text-xl mb-8">
-            Trabajemos juntos para crear soluciones tecnológicas que impulsan tu negocio.
+            Trabajemos juntos para crear soluciones tecnológicas para impulsar tu negocio.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link href="/form-detailed">
