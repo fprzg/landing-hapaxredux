@@ -72,10 +72,10 @@ export default function Page() {
             Creamos nuestros sistemas optimizando cada detalle para garantizar velocidad, estabilidad y visibilidad.
           </p>
           <div className="flex flex-col md:flex-row gap-4">
+            {/**
             <Link href={"/services"} className="">
               <Button className="button bg-blue-600 hover:bg-blue-700">Nuestros servicios</Button>
             </Link>
-            {/**
             <Link href="/form-detailed" className="">
               <Button variant="outline" className="button">Trabaja con nosotros</Button>
             </Link>

@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "HapaxRedux - Diseño web",
+  title: "HapaxRedux - Posicionamiento Web",
   description: "Agencia de diseño web y SEO.",
 };
 
