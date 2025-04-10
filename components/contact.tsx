@@ -27,7 +27,6 @@ const ContactInfo = () => {
                         <p className="text-gray-600">123 Tech Street, Silicon Valley, CA 94000</p>
                     </div>
                 </div>
-                 */}
                 <div className="flex items-start space-x-4">
                     <div className="bg-blue-100 p-1 md:p-3 rounded-full text-blue-600">📞</div>
                     <div>
@@ -35,6 +34,7 @@ const ContactInfo = () => {
                         <p className="text-gray-600">+52 (951) 244-6238</p>
                     </div>
                 </div>
+                 */}
                 <div className="flex items-start space-x-4">
                     <div className="bg-blue-100 p-1 md:p-3 rounded-full text-blue-600">✉️</div>
                     <div>
@@ -54,7 +54,6 @@ const ContactInfo = () => {
         </Card>
     );
 };
-
 
 const ContactFormShort = () => {
     return (
